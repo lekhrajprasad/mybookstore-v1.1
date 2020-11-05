@@ -1,0 +1,23 @@
+
+management:
+    endpoints:
+        web:
+            exposure:
+                include: '*' #Enabling actuator endpoint
+spring:
+    boot.admin.client.url: http://localhost:1234 #Boot Admin configuration, Actuator Admin is running on port 8080
+    application:
+        name: MyBookStoreWeb
+    # RabbitMQ Properties
+    rabbitmq:
+      addresses: amqps://xrjbysaw:ESAki5A7fkGit0EMD3q2N6Z7V_KCK69J@fox.rmq.cloudamqp.com/xrjbysaw
+server:
+    port: 5000
+
+logging:
+    level:
+        root: WARN
+        com.coursecube: DEBUG
+        de.codecentric: WARN
+    pattern:
+        console: '%-5level [%thread]-${PID} %logger{36}  - %msg%n'
