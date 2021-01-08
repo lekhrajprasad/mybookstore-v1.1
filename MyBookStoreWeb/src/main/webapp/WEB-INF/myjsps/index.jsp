@@ -16,7 +16,7 @@
 		<c:import url="myheader.jsp" />
 	</div>
 	<h2>
-		<a href="showAllBooks">Display All Books</a>
+		<a href='<c:out value="showAllBooks"/>'>Display All Books</a>
 	</h2>
 	<c:import url="myfooter.jsp" />
 </body>
